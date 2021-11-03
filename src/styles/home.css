@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Kaku Gothic", sans-serif;
+}
+
+body{
+    background: url(https://wallpaperaccess.com/full/99810.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+button{
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 24px;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: .3s;
+}
+
+#welcomeMessage{
+    margin-top: 5em;
+    font-family: "Zen Kaku Gothic", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+
+
+#doubleArrow::before{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 5em;
+    
+}
+
+#doubleArrow{
+    animation: loop .7s linear infinite alternate;
+}
+
+@keyframes loop {
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform: translateY(25px);
+    }
+}
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    padding: 5px;
+}
+
+ul li a{
+    color: white;
+    z-index: 20000;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 20000;
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+
+hr{
+    margin-left: 290px;
+    margin-right: 290px;
+    box-shadow: 1px 1px 1px 1px #00000040;
+}
+
+.sair{
+    margin-top: 5em;
+}
+
+.main{
+    margin-top: 10px;
+}

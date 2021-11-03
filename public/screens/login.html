@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/styles/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id='divGeral'>
+        <fieldset id='card'>
+            <legend>
+                <label class='label' id='nameLabel'>Login</label>
+            </legend>
+            <p id='message'></p>
+
+            <div id='cardContent'>
+                <label for='user' class='label'> User</label>
+                <input type='text' placeholder='Username' id='user' name='user'></input>
+                <label for='Password' class='label'> Password</label>
+                <input type='password' placeholder='Password' id='Password' name='Password'></input>
+            </div>
+            <script src="../../src/services/login.js"></script>
+            <button type='button' onclick="entrar()" class='label'>Sign in</button>
+            <hr />
+            <p class='label'>Não possui contra? <a href='./register.html'>Cadastrar-se</a></p>
+        </fieldset>
+
+
+    </div>
+</body>
+
+</html>
